@@ -1,0 +1,120 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #60a5fa, #9333ea);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 448px;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 640px) {
+    .input-group {
+        flex-direction: row;
+    }
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    color: #374151;
+}
+
+input[type="text"]:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+button:focus {
+    box-shadow: 0 0 0 2px #3b82f6, 0 0 0 4px rgba(59, 130, 246, 0.5);
+}
+
+.weather-display {
+    text-align: center;
+}
+
+.message {
+    color: #ef4444;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.loading-indicator {
+    color: #2563eb;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.weather-info h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.weather-info p {
+    color: #374151;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.weather-info p:last-child {
+    margin-bottom: 16px;
+}
+
+.weather-info span {
+    font-weight: 700;
+    text-transform: capitalize;
+}
